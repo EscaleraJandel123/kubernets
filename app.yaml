@@ -15,7 +15,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8s-activity-jandelescalera # Change this if needed
+  name: k8s-activity-jandel
   labels:
     app: nginx
 spec:
@@ -35,7 +35,7 @@ spec:
               "sh",
               "-c",
               "curl -o /usr/share/nginx/html/index.html https://raw.githubusercontent.com/Escalerajandel123/Kuber/main/index.html",
-            ] # Change this URL if necessary
+            ]
           volumeMounts:
             - name: html-volume
               mountPath: /usr/share/nginx/html
