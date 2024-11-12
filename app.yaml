@@ -46,4 +46,3 @@ spec:
       volumes:
         - name: html-volume
           emptyDir: {}
-raw.githubusercontent.com
